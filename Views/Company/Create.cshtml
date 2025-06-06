@@ -1,56 +1,57 @@
 ﻿@model CompanyDirectory.Models.Company
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Create Company";
 }
 
-<h1>Create</h1>
+<h1 class="text-3xl font-bold text-gray-800 mb-4">Create Company</h1>
+<hr class="mb-6 border-gray-300" />
 
-<h4>Company</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
-                <input asp-for="Description" class="form-control" />
-                <span asp-validation-for="Description" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="LogoUrl" class="control-label"></label>
-                <input asp-for="LogoUrl" class="form-control" />
-                <span asp-validation-for="LogoUrl" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Website" class="control-label"></label>
-                <input asp-for="Website" class="form-control" />
-                <span asp-validation-for="Website" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CreatedAt" class="control-label"></label>
-                <input asp-for="CreatedAt" class="form-control" />
-                <span asp-validation-for="CreatedAt" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UpdatedAt" class="control-label"></label>
-                <input asp-for="UpdatedAt" class="form-control" />
-                <span asp-validation-for="UpdatedAt" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+<div class="max-w-2xl mx-auto bg-white p-6 rounded-xl shadow-md">
+    <form asp-action="Create" class="space-y-6">
+        <div asp-validation-summary="ModelOnly" class="text-red-500 text-sm mb-4"></div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
+        <div>
+            <label asp-for="Name" class="block text-sm font-medium text-gray-700 mb-1"></label>
+            <input asp-for="Name" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <span asp-validation-for="Name" class="text-red-500 text-sm"></span>
+        </div>
+
+        <div>
+            <label asp-for="Description" class="block text-sm font-medium text-gray-700 mb-1"></label>
+            <input asp-for="Description" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <span asp-validation-for="Description" class="text-red-500 text-sm"></span>
+        </div>
+
+        <div>
+            <label asp-for="LogoUrl" class="block text-sm font-medium text-gray-700 mb-1"></label>
+            <input asp-for="LogoUrl" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <span asp-validation-for="LogoUrl" class="text-red-500 text-sm"></span>
+        </div>
+
+        <div>
+            <label asp-for="Website" class="block text-sm font-medium text-gray-700 mb-1"></label>
+            <input asp-for="Website" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <span asp-validation-for="Website" class="text-red-500 text-sm"></span>
+        </div>
+
+        <div>
+            <label asp-for="CreatedAt" class="block text-sm font-medium text-gray-700 mb-1"></label>
+            <input asp-for="CreatedAt" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <span asp-validation-for="CreatedAt" class="text-red-500 text-sm"></span>
+        </div>
+
+        <div>
+            <label asp-for="UpdatedAt" class="block text-sm font-medium text-gray-700 mb-1"></label>
+            <input asp-for="UpdatedAt" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <span asp-validation-for="UpdatedAt" class="text-red-500 text-sm"></span>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <input type="submit" value="Create" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded-lg transition" />
+            <a asp-action="Index" class="text-blue-600 hover:underline">Back to List</a>
+        </div>
+    </form>
 </div>
 
 @section Scripts {

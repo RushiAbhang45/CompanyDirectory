@@ -8,43 +8,269 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CompanyDirectory.styles.css" asp-append-version="true" />
     <link href="~/output.css" rel="stylesheet" />
-    <!-- Add this in _Layout.cshtml inside <head> -->
 
 
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CompanyDirectory</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+   <div id="header" class="hidden sm:hidden md:block lg:block xl:block bg-gray-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center justify-between py-2">
+                <!-- Left Header -->
+                <div class="w-full md:w-7/12 flex flex-wrap items-center space-x-4">
+                    <div class="flex items-center space-x-2">
+                        <a href="/contactus.html" class="flex items-center space-x-1 hover:text-yellow-400">
+                            <img src="https://midassets.com/images/contact-us.svg" alt="Contact Us" title="Contact Us" class="h-6 w-6">
+                            <span>Contact Us</span>
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <a href="/customercare.html" class="flex items-center space-x-1 hover:text-yellow-400">
+                            <img src="https://midassets.com/images/c-care.svg" alt="Customer Support" title="Customer Support" class="h-6 w-6">
+                            <span>Customer Support</span>
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <a href="/buy-directory.html" class="flex items-center space-x-1 hover:text-yellow-400">
+                            <img src="https://midassets.com/images/buy-direcory.svg" alt="Buy Directory" title="Buy Directory" class="h-6 w-6">
+                            <span>Buy Directory</span>
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <a href="https://www.maharashtradirectory.com/Testimonials/Index" class="flex items-center space-x-1 hover:text-yellow-400">
+                            <img src="https://midassets.com/images/testimonial-icon.svg" alt="Testimonials" title="Testimonials" class="h-6 w-6">
+                            <span>Testimonials</span>
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <a href="https://mipl.co.in/careers.php" target="_blank" class="flex items-center space-x-1 hover:text-yellow-400">
+                            <img src="https://midassets.com/images/jobs.svg" alt="Careers" title="Careers" class="h-6 w-6">
+                            <span>Careers</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Header -->
+                <div class="w-full md:w-5/12 flex justify-end items-center space-x-4 mt-2 md:mt-0">
+                    <!-- Download App -->
+                    <div class="relative group">
+                        <div class="flex items-center cursor-pointer space-x-1 hover:text-yellow-400">
+                            <img src="https://midassets.com/images/download-app.svg" alt="Download App" class="h-6 w-6">
+                            <span>Download App</span>
+                            <svg class="h-4 w-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.584l3.71-4.356a.75.75 0 011.14.976l-4.25 5a.75.75 0 01-1.14 0l-4.25-5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <ul class="absolute z-10 hidden group-hover:block bg-white text-black shadow-md mt-2 rounded p-2 w-48">
+                            <li class="flex items-center space-x-2 p-2 hover:bg-gray-100">
+                                <img src="https://midassets.com/images/playstore-icon.jpg" alt="Google Play" class="h-8 w-8">
+                                <a href="https://play.google.com/store/apps/details?id=mid.mipl.mid" target="_blank" class="text-sm">Get it on<br>Google Play</a>
+                            </li>
+                            <li class="border-t my-1"></li>
+                            <li class="flex items-center space-x-2 p-2 hover:bg-gray-100">
+                                <img src="https://midassets.com/images/applestore-icon.jpg" alt="App Store" class="h-8 w-8">
+                                <a href="https://itunes.apple.com/us/app/maharashtra-industries-directory-official/id1080578661" target="_blank" class="text-sm">Get it on<br>App Store</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Join Now -->
+                    <div class="flex items-center space-x-1 hover:text-yellow-400 cursor-pointer" data-toggle="modal" data-target="#signup">
+                        <img src="https://midassets.com/images/join-now.svg" alt="Join Now" class="h-6 w-6">
+                        <span>Join now</span>
+                    </div>
+
+                    <!-- Login -->
+                    <div class="flex items-center space-x-1 hover:text-yellow-400 cursor-pointer" data-toggle="modal" data-target="#login">
+                        <img src="https://midassets.com/images/login.svg" alt="Login" class="h-6 w-6">
+                        <span>Login</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Header -->
+    <div class="bg-white px-4 py-4 flex flex-wrap justify-between items-center border-b shadow-[0_0_9px_0_#7b7b7b]">
+        <!-- Logo Section -->
+        <div class="flex items-center space-x-2">
+            <a href="https://www.maharashtradirectory.com" class="flex items-center space-x-2">
+                <img src="https://midassets.com/images/MID_logo.webp" alt="MID Logo" class="w-[69px] h-[69px] hidden md:block" />
+                <img src="https://midassets.com/images/MID_logo_mobile.png" alt="MID Mobile" class="w-9 h-9 md:hidden" />
+                <div class="hidden md:block text-xl font-semibold">
+                    Maharashtra Industries Directory<sup class="text-xs align-top">™</sup>
+                </div>
+                <div class="md:hidden text-lg font-bold">
+                    MID<sup class="text-xs align-top">™</sup>
+                </div>
+            </a>
+        </div>
+
+        <!-- Mobile Toggle -->
+        <div class="md:hidden">
+            <button id="nav-toggle" class="text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                     viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <!-- Navigation -->
+        <nav id="nav-menu" class="hidden md:flex flex-col md:flex-row md:items-center md:space-x-6 mt-4 md:mt-0 text-sm text-red-600">
+            <a href="#" class="flex items-center text-black hover:text-blue-600 space-x-1">
+                <i class="fa fa-inr text-red-600"></i><span>Buying / Selling</span>
+            </a>
+            <a href="#" class="flex items-center text-black hover:text-blue-600 space-x-1">
+                <i class="fa fa-file text-red-600"></i><span>E-Catalog</span>
+            </a>
+            <a href="#" class="flex items-center text-black hover:text-blue-600 space-x-1">
+                <i class="fa fa-file-image text-red-600"></i><span>Advertise</span>
+            </a>
+            <a href="#" class="flex items-center text-black hover:text-blue-600 space-x-1">
+                <i class="fa fa-file-alt text-red-600"></i><span>Add Company (Free)</span>
+            </a>
+
+            <!-- Dropdown -->
+            <div class="relative group">
+                <button class="flex items-center text-black hover:text-blue-600 space-x-1 focus:outline-none">
+                    <i class="fa fa-cogs text-red-600"></i>
+                    <span>Product & Services</span>
+                    <i class="fa fa-chevron-down text-xs ml-1"></i>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+                <div class="absolute hidden group-hover:block bg-white border mt-2 w-64 shadow z-20">
+                    <ul class="text-sm text-gray-700">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100" target="_blank">Web Design and Hosting</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100" target="_blank">PHP / CMS Websites</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100" target="_blank">Android App Development</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100" target="_blank">Live CHAT Tracker</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100" target="_blank">Digital Marketing</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100" target="_blank">SEO</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100" target="_blank">SMO</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100" target="_blank">Mobile Advertising</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100" target="_blank">Industrial Exhibitions</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-    </header>
+    </div>
+</div>
+    <script>
+        document.getElementById('nav-toggle').addEventListener('click', function () {
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</head>
+<body>
+   
+    @* <div class="w-full bg-cover bg-fixed bg-no-repeat" style="background-image: url('https://midassets.com/images/industry-back-final.webp');">
+
+
+        <div class="py-6 bg-[#1e2041]/90">
+
+            <!-- Search Section -->
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white border-4 border-red-500 rounded shadow flex overflow-hidden">
+                    <input type="text" placeholder="Find Product / Company here..." class="flex-grow px-4 py-3 outline-none text-gray-700">
+                    <button class="bg-black text-white px-6 flex items-center gap-2 hover:bg-gray-800">
+                        <i data-lucide="search"></i> Search
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex justify-center gap-4 mt-6 pb-10">
+            <a href="#" class="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 text-center">
+                Post Buy Offer
+            </a>
+            <a href="#" class="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 text-center">
+                Post Sell Offer
+            </a>
+        </div>
+    </div> *@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
- @*    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - CompanyDirectory - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+@*  <!-- Footer -->
+  <footer class="bg-gray-900 text-white mt-12">
+    <div class="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
+
+      <!-- Regional Directories -->
+      <div>
+        <h3 class="font-bold mb-3 uppercase text-gray-200">Regional Directories</h3>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:underline">Pune Business Directory</a></li>
+          <li><a href="#" class="hover:underline">Thane Business Directory</a></li>
+          <li><a href="#" class="hover:underline">Sangli Business Directory</a></li>
+          <li><a href="#" class="hover:underline">Mumbai Business Directory</a></li>
+          <li><a href="#" class="hover:underline">Nashik Business Directory</a></li>
+          <li><a href="#" class="hover:underline">Kolhapur Business Directory</a></li>
+          <li><a href="#" class="hover:underline">Aurangabad Business Directory</a></li>
+          <li><a href="#" class="hover:underline">Ahmedabad Business Directory</a></li>
+        </ul>
+      </div>
+
+      <!-- National and State Directories -->
+      <div>
+        <h3 class="font-bold mb-3 uppercase text-gray-200">National Directories</h3>
+        <ul class="space-y-1 mb-4">
+          <li><a href="#" class="hover:underline">Gulf Trade Directory</a></li>
+          <li><a href="#" class="hover:underline">Indian Industries Directory</a></li>
+        </ul>
+
+        <h3 class="font-bold mb-3 uppercase text-gray-200">State Directories</h3>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:underline">Goa Business Directory</a></li>
+          <li><a href="#" class="hover:underline">Gujarat Industries Directory</a></li>
+        </ul>
+      </div>
+
+      <!-- Maharashtra Directory -->
+      <div>
+        <h3 class="font-bold mb-3 uppercase text-gray-200">Maharashtra Directory</h3>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">About Us</a></li>
+          <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+          <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+          <li><a href="#" class="hover:underline">Industrial Resources</a></li>
+        </ul>
+      </div>
+
+      <!-- Services + Social -->
+      <div>
+        <h3 class="font-bold mb-3 uppercase text-gray-200">Services</h3>
+        <ul class="space-y-1 mb-4">
+          <li><a href="#" class="hover:underline">Membership Plans</a></li>
+          <li><a href="#" class="hover:underline">DVD Help</a></li>
+          <li><a href="#" class="hover:underline">Buy Directory</a></li>
+          <li><a href="#" class="hover:underline">Product Index</a></li>
+          <li><a href="#" class="hover:underline">Company Index</a></li>
+          <li><a href="#" class="hover:underline">E-Catalog</a></li>
+          <li><a href="#" class="hover:underline">Advertise</a></li>
+        </ul>
+
+        <div class="mt-4">
+          <h4 class="font-bold mb-2">Follow Us</h4>
+          <div class="flex gap-2">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" class="w-6 h-6" /></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter" class="w-6 h-6" /></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733590.png" alt="Google" class="w-6 h-6" /></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/174/174857.png" alt="LinkedIn" class="w-6 h-6" /></a>
+          </div>
         </div>
-    </footer> *@
+      </div>
+    </div> *@
+
+    <div class="text-center text-gray-500 text-xs py-4 border-t border-gray-700">
+      &copy; 2025 Maharashtra Industries Directory. All rights reserved.
+    </div>
+  </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

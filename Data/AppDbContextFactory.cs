@@ -1,4 +1,4 @@
-﻿using CompanyDirectory.Data.CompanyDirectory.Data;
+﻿using CompanyDirectory.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;

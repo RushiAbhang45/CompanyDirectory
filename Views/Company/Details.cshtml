@@ -5,34 +5,40 @@
 }
 <link rel="stylesheet" href="~/css/output.css" />
 
-<div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6 mt-10 space-y-6 border border-gray-200">
+<script>
+    function printDetails() {
+        window.print();
+    }
+</script>
 
-    <!-- Top Action Buttons -->
-    <div class="flex justify-between">
-        <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded text-sm flex items-center gap-2">
+<div id="print-section" class="max-w-5xl mx-auto bg-white border border-gray-300 mt-10 p-0 text-sm shadow-md rounded-sm">
+
+    <!-- Top Buttons -->
+    <div class="flex justify-between px-4 py-3 border-b print:hidden">
+        <button onclick="printDetails()" class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded flex items-center text-sm gap-2">
             <i class="fas fa-print"></i> Print Details
         </button>
-        <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded text-sm flex items-center gap-2">
+        <button class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded flex items-center text-sm gap-2">
             <i class="fas fa-envelope"></i> Send Enquiry
         </button>
     </div>
 
-    <!-- Info Table Style Layout -->
-    <div class="border text-sm divide-y divide-gray-200">
+    <!-- Company Info -->
+    <div class="divide-y border-b border-t">
         <div class="grid grid-cols-3">
-            <div class="bg-gray-100 font-medium px-4 py-2">Company Name</div>
+            <div class="bg-gray-100 px-4 py-2 font-semibold">Company Name</div>
             <div class="col-span-2 px-4 py-2">@Model.Name</div>
         </div>
         <div class="grid grid-cols-3">
-            <div class="bg-gray-100 font-medium px-4 py-2">Description</div>
+            <div class="bg-gray-100 px-4 py-2 font-semibold">Description</div>
             <div class="col-span-2 px-4 py-2">@Model.Description</div>
         </div>
         <div class="grid grid-cols-3 items-center">
-            <div class="bg-gray-100 font-medium px-4 py-2">Logo</div>
+            <div class="bg-gray-100 px-4 py-2 font-semibold">Logo</div>
             <div class="col-span-2 px-4 py-2">
                 @if (!string.IsNullOrEmpty(Model.LogoUrl))
                 {
-                    <img src="@Model.LogoUrl" alt="@Model.Name Logo" class="h-16 bg-gray-50 border p-1 rounded" />
+                    <img src="@Model.LogoUrl" alt="@Model.Name Logo" class="h-12 border bg-white rounded-sm p-1" />
                 }
                 else
                 {
@@ -41,11 +47,11 @@
             </div>
         </div>
         <div class="grid grid-cols-3">
-            <div class="bg-gray-100 font-medium px-4 py-2">Website</div>
+            <div class="bg-gray-100 px-4 py-2 font-semibold">Website</div>
             <div class="col-span-2 px-4 py-2">
                 @if (!string.IsNullOrEmpty(Model.Website))
                 {
-                    <a href="@Model.Website" class="text-blue-600 hover:underline" target="_blank">@Model.Website</a>
+                    <a href="@Model.Website" target="_blank" class="text-blue-600 hover:underline">@Model.Website</a>
                 }
                 else
                 {
@@ -54,27 +60,51 @@
             </div>
         </div>
         <div class="grid grid-cols-3">
-            <div class="bg-gray-100 font-medium px-4 py-2">Created At</div>
+            <div class="bg-gray-100 px-4 py-2 font-semibold">Created At</div>
             <div class="col-span-2 px-4 py-2">@Model.CreatedAt.ToString("dd MMM yyyy")</div>
         </div>
         <div class="grid grid-cols-3">
-            <div class="bg-gray-100 font-medium px-4 py-2">Last Updated</div>
+            <div class="bg-gray-100 px-4 py-2 font-semibold">Last Updated</div>
             <div class="col-span-2 px-4 py-2">@Model.UpdatedAt.ToString("dd MMM yyyy")</div>
         </div>
     </div>
 
-    <!-- Back Link -->
-    <div>
-        <a asp-action="Index" class="text-blue-600 hover:underline text-sm">Back to List</a>
+    <!-- Products Section -->
+    <div class="px-4 py-6">
+        <div class="font-semibold text-gray-700 border-b pb-2 mb-4 text-lg">Products</div>
+        @if (Model.Products != null && Model.Products.Any())
+        {
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                @foreach (var product in Model.Products)
+                {
+                    <div class="border border-gray-200 rounded p-3 shadow-sm hover:shadow transition duration-200 bg-gray-50">
+                        <h4 class="font-medium text-gray-900 mb-1">@product.Name</h4>
+                        @if (!string.IsNullOrEmpty(product.Description))
+                        {
+                            <p class="text-gray-600 text-xs">@product.Description</p>
+                        }
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <p class="text-gray-500 italic text-sm">No products available for this company.</p>
+        }
     </div>
 
-    <!-- Bottom Action Buttons -->
-    <div class="flex justify-between mt-4">
-        <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded text-sm flex items-center gap-2">
+    <!-- Bottom Buttons -->
+    <div class="flex justify-between px-4 py-3 border-t print:hidden">
+        <button onclick="printDetails()" class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded flex items-center text-sm gap-2">
             <i class="fas fa-print"></i> Print Details
         </button>
-        <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded text-sm flex items-center gap-2">
+        <button class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded flex items-center text-sm gap-2">
             <i class="fas fa-envelope"></i> Send Enquiry
         </button>
+    </div>
+
+    <!-- Back Link -->
+    <div class="px-4 pb-4 print:hidden">
+        <a asp-action="Index" class="text-blue-600 hover:underline text-sm">← Back to List</a>
     </div>
 </div>
