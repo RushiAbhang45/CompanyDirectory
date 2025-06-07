@@ -12,10 +12,10 @@
 <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">Company Directory</h2>
 <link rel="stylesheet" href="~/css/output.css" />
 
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-Center">
     @foreach (var company in Model)
     {
-        <div class="bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col justify-between">
+        <div class="bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col justify-Center">
             <div class="flex items-center gap-4 mb-4">
                 <img src="@company.LogoUrl" alt="Logo of @company.Name" class="w-16 h-16 rounded-full border object-contain bg-gray-50 p-1" />
                 <div>

@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Reset Link Sent";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Reset Link</title>
+    <link rel="stylesheet" href="~/css/output.css" />
+</head>
+<body class="flex justify-center items-center min-h-screen bg-gray-100">
+    <div class="bg-white p-8 rounded-xl shadow-md w-full max-w-lg space-y-4">
+        <h2 class="text-xl font-bold text-center text-gray-800">Reset Password Link</h2>
+        <p class="text-sm text-gray-600 text-center">Click the link below to reset your password:</p>
+        <div class="text-center">
+            <a href="@TempData["ResetLink"]" class="text-blue-600 hover:underline">@TempData["ResetLink"]</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -11,5 +11,7 @@ namespace CompanyDirectory.Data
 
         public DbSet<Company> Companies { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<ApplicationUser> Users { get; set; }
+
     }
 }
