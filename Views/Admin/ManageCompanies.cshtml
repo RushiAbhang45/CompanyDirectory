@@ -1,5 +1,4 @@
 ﻿@model IEnumerable<CompanyDirectory.Models.Company>
-
 @{
     ViewData["Title"] = "Manage Companies";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
@@ -13,51 +12,64 @@
     </a>
 </div>
 
-@if (!Model.Any())
-{
-    <p class="text-gray-600">No companies found.</p>
-}
-else
-{
-    <div class="overflow-x-auto">
-        <table class="min-w-full bg-white border border-gray-200 rounded shadow-sm">
-            <thead class="bg-red-600 text-white">
-                <tr>
-                    <th class="px-4 py-2 text-left">Name</th>
-                    <th class="px-4 py-2 text-left">Description</th>
-                    <th class="px-4 py-2 text-left">Logo</th>
-                    <th class="px-4 py-2 text-left">Website</th>
-                    <th class="px-4 py-2 text-left">Created</th>
-                    <th class="px-4 py-2 text-left">Updated</th>
-                    <th class="px-4 py-2 text-left">Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
-                    <tr class="border-t border-gray-200 hover:bg-gray-100">
-                        <td class="px-4 py-2">@item.Name</td>
-                        <td class="px-4 py-2 truncate max-w-xs">@item.Description</td>
-                        <td class="px-4 py-2">
-                            <img src="@item.LogoUrl" alt="Logo" class="h-10 w-10 object-cover rounded-full" />
-                        </td>
-                        <td class="px-4 py-2">
-                            <a href="@item.Website" target="_blank" rel="noopener noreferrer" 
-                               class="text-blue-600 hover:underline">@item.Website</a>
-                        </td>
-                        <td class="px-4 py-2">@item.CreatedAt.ToShortDateString()</td>
-                        <td class="px-4 py-2">@item.UpdatedAt.ToShortDateString()</td>
-                        <td class="px-4 py-2 space-x-2">
-                            <a asp-action="EditCompany" asp-controller="Admin" asp-route-id="@item.Id" 
-                               class="text-blue-600 hover:underline">Edit</a>
-                            <a asp-action="DetailsCompany" asp-controller="Admin" asp-route-id="@item.Id" 
-                               class="text-green-600 hover:underline">Details</a>
-                            <a asp-action="DeleteCompany" asp-controller="Admin" asp-route-id="@item.Id" 
-                               class="text-red-600 hover:underline">Delete</a>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
+<!-- Search Input -->
+<div class="mb-6">
+    <div class="flex space-x-2">
+        <input id="companySearchBox" type="text" placeholder="Search Companies..."
+               class="px-4 py-2 border rounded w-full focus:outline-none focus:ring-2 focus:ring-red-500" />
+        @* <button id="manualSearchBtn"
+                class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
+            Search
+        </button> *@
     </div>
+</div>
+
+<!-- Alert -->
+<div id="alertNotFound" class="hidden mb-4 bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-2 rounded">
+    No companies found.
+</div>
+
+<!-- Partial View Container -->
+<div id="companyTableContainer">
+    @await Html.PartialAsync("CompanyTable", Model)
+</div>
+
+@section Scripts {
+    <script>
+        const searchBox = document.getElementById("companySearchBox");
+        const manualSearchBtn = document.getElementById("manualSearchBtn");
+        const alertBox = document.getElementById("alertNotFound");
+        const tableContainer = document.getElementById("companyTableContainer");
+
+        let timeout = null;
+
+        function performSearch(query) {
+            fetch(`/Admin/SearchCompanies?term=${encodeURIComponent(query)}`)
+                .then(response => response.text())
+                .then(html => {
+                    tableContainer.innerHTML = html;
+
+                    const hasResults = html.trim().includes("<table"); // crude check if table exists
+                    alertBox.classList.toggle("hidden", hasResults);
+                })
+                .catch(() => {
+                    alertBox.classList.remove("hidden");
+                });
+        }
+
+        // Dynamic search (on typing)
+        searchBox.addEventListener("input", () => {
+            clearTimeout(timeout);
+            const query = searchBox.value.trim();
+            if (query.length >= 3 || query.length === 0) {
+                timeout = setTimeout(() => performSearch(query), 300);
+            }
+        });
+
+        // Manual search button
+        manualSearchBtn.addEventListener("click", () => {
+            const query = searchBox.value.trim();
+            performSearch(query);
+        });
+    </script>
 }

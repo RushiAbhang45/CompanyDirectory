@@ -134,7 +134,24 @@ namespace CompanyDirectory.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(ManageCompanies));
         }
+        //                     Search functionality
+        public async Task<IActionResult> SearchCompanies(string term)
+        {
+            if (!IsAdmin())
+                return Unauthorized();
 
+            if (string.IsNullOrWhiteSpace(term))
+            {
+                var allCompanies = await _context.Companies.ToListAsync();
+                return PartialView("CompanyTable", allCompanies);
+            }
+
+            var filtered = await _context.Companies
+                .Where(c => c.Name.Contains(term) || c.Description.Contains(term))
+                .ToListAsync();
+
+            return PartialView("CompanyTable", filtered);
+        }
 
         // AdminController.cs ///////////////////////////////////////////User Crud ADD User Update/Delete
         [HttpGet]

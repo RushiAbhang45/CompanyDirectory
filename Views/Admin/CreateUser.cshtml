@@ -4,48 +4,55 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2 class="text-2xl font-bold mb-6">Add New User</h2>
+<div class="min-h-screen flex items-center justify-center bg-gray-100 py-10 px-4">
+    <div class="w-full max-w-2xl bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Add New User</h2>
 
-<form asp-action="CreateUser" method="post" class="bg-white p-6 rounded shadow max-w-xl">
-    <div class="mb-4">
-        <label asp-for="FirstName" class="block mb-1 font-semibold">First Name</label>
-        <input asp-for="FirstName" class="form-input w-full border border-gray-300 rounded" />
-        <span asp-validation-for="FirstName" class="text-red-600 text-sm"></span>
+        <form asp-action="CreateUser" method="post" class="space-y-6">
+            <div>
+                <label asp-for="FirstName" class="block text-sm font-semibold text-gray-700 mb-1">First Name</label>
+                <input asp-for="FirstName" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <span asp-validation-for="FirstName" class="text-red-600 text-sm"></span>
+            </div>
+
+            <div>
+                <label asp-for="LastName" class="block text-sm font-semibold text-gray-700 mb-1">Last Name</label>
+                <input asp-for="LastName" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <span asp-validation-for="LastName" class="text-red-600 text-sm"></span>
+            </div>
+
+            <div>
+                <label asp-for="Email" class="block text-sm font-semibold text-gray-700 mb-1">Email</label>
+                <input asp-for="Email" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <span asp-validation-for="Email" class="text-red-600 text-sm"></span>
+            </div>
+
+            <div>
+                <label asp-for="Mobile" class="block text-sm font-semibold text-gray-700 mb-1">Mobile</label>
+                <input asp-for="Mobile" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <span asp-validation-for="Mobile" class="text-red-600 text-sm"></span>
+            </div>
+
+            <div>
+                <label asp-for="Role" class="block text-sm font-semibold text-gray-700 mb-1">Role</label>
+                <select asp-for="Role" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="User">User</option>
+                    <option value="Admin">Admin</option>
+                </select>
+                <span asp-validation-for="Role" class="text-red-600 text-sm"></span>
+            </div>
+
+            <div class="flex justify-between items-center mt-6">
+                <button type="submit"
+                        class="bg-green-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-green-700 transition duration-200">
+                    Create
+                </button>
+
+                <a asp-action="ViewUsers"
+                   class="text-blue-600 hover:underline text-sm">
+                    Back to List
+                </a>
+            </div>
+        </form>
     </div>
-
-    <div class="mb-4">
-        <label asp-for="LastName" class="block mb-1 font-semibold">Last Name</label>
-        <input asp-for="LastName" class="form-input w-full border border-gray-300 rounded" />
-        <span asp-validation-for="LastName" class="text-red-600 text-sm"></span>
-    </div>
-
-    <div class="mb-4">
-        <label asp-for="Email" class="block mb-1 font-semibold">Email</label>
-        <input asp-for="Email" class="form-input w-full border border-gray-300 rounded" />
-        <span asp-validation-for="Email" class="text-red-600 text-sm"></span>
-    </div>
-
-    <div class="mb-4">
-        <label asp-for="Mobile" class="block mb-1 font-semibold">Mobile</label>
-        <input asp-for="Mobile" class="form-input w-full border border-gray-300 rounded" />
-        <span asp-validation-for="Mobile" class="text-red-600 text-sm"></span>
-    </div>
-
-    <div class="mb-4">
-        <label asp-for="Role" class="block mb-1 font-semibold">Role</label>
-        <select asp-for="Role" class="form-select w-full border border-gray-300 rounded">
-            <option value="User">User</option>
-            <option value="Admin">Admin</option>
-        </select>
-        <span asp-validation-for="Role" class="text-red-600 text-sm"></span>
-    </div>
-
-    <button type="submit"
-            class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
-        Create
-    </button>
-</form>
-<div>
-    <a asp-action="ViewUsers">Back to List</a>
 </div>
-
