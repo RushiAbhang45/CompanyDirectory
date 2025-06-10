@@ -2,8 +2,9 @@
 using CompanyDirectory.Models;
 using CompanyDirectory.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Cryptography;
-using System.Text;
+using Microsoft.AspNetCore.Http;
+using System.Linq;
+using BCrypt.Net; // Add this using
 
 namespace CompanyDirectory.Controllers
 {
@@ -11,13 +12,6 @@ namespace CompanyDirectory.Controllers
     {
         private readonly AppDbContext _context;
         public AuthenticationController(AppDbContext context) => _context = context;
-
-        private string HashPassword(string password)
-        {
-            using var sha = SHA256.Create();
-            var bytes = sha.ComputeHash(Encoding.UTF8.GetBytes(password));
-            return Convert.ToBase64String(bytes);
-        }
 
         [HttpGet]
         public IActionResult Register()
@@ -56,7 +50,8 @@ namespace CompanyDirectory.Controllers
                 LastName = model.LastName,
                 Email = model.Email,
                 Mobile = model.Mobile,
-                PasswordHash = HashPassword(model.Password)
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword(model.Password),
+                Role = model.Role  // ✅ Get role from dropdown selection
             };
 
             _context.Users.Add(user);
@@ -71,19 +66,30 @@ namespace CompanyDirectory.Controllers
         [HttpPost]
         public IActionResult Login(LoginViewModel model)
         {
-            if (!ModelState.IsValid) return View(model);
+            if (!ModelState.IsValid)
+                return View(model);
 
-            var hash = HashPassword(model.Password);
-            var user = _context.Users.FirstOrDefault(u => u.Email == model.Email && u.PasswordHash == hash);
-            if (user == null)
+            var user = _context.Users.FirstOrDefault(u => u.Email == model.Email);
+            if (user == null || !BCrypt.Net.BCrypt.Verify(model.Password, user.PasswordHash))
             {
                 ModelState.AddModelError("", "Invalid credentials.");
                 return View(model);
             }
 
+            // Store user data in session
             HttpContext.Session.SetString("UserId", user.Id.ToString());
-            HttpContext.Session.SetString("UserName", user.FirstName);
-            return RedirectToAction("Index", "Company");
+            HttpContext.Session.SetString("UserName", user.FirstName ?? "");
+            HttpContext.Session.SetString("UserRole", user.Role ?? "User");
+
+            // Redirect based on role
+            if ((user.Role ?? "User") == "Admin")
+            {
+                return RedirectToAction("Dashboard", "Admin");
+            }
+            else
+            {
+                return RedirectToAction("Index", "Company");
+            }
         }
 
         public IActionResult Logout()
@@ -106,7 +112,7 @@ namespace CompanyDirectory.Controllers
             }
 
             // Mock reset logic
-            TempData["ResetLink"] = Url.Action("ResetPassword", "Auth", new { email = user.Email }, Request.Scheme);
+            TempData["ResetLink"] = Url.Action("ResetPassword", "Authentication", new { email = user.Email }, Request.Scheme);
             return RedirectToAction("ShowResetLink");
         }
 
@@ -127,7 +133,7 @@ namespace CompanyDirectory.Controllers
                 return View(model);
             }
 
-            user.PasswordHash = HashPassword(model.NewPassword);
+            user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(model.NewPassword);
             _context.SaveChanges();
             return RedirectToAction("Login");
         }

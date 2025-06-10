@@ -1,0 +1,41 @@
+﻿@model IEnumerable<CompanyDirectory.Models.ApplicationUser>
+
+@{
+    ViewData["Title"] = "ViewUsers";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h2 class="text-2xl font-bold mb-6">Manage Users</h2>
+
+<a href="@Url.Action("CreateUser", "Admin")"
+   class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 mb-4 inline-block">
+    Add New User
+</a>
+
+<table class="w-full table-auto bg-white shadow rounded">
+    <thead class="bg-gray-100">
+        <tr>
+            <th class="px-4 py-2">Name</th>
+            <th class="px-4 py-2">Email</th>
+            <th class="px-4 py-2">Mobile</th>
+            <th class="px-4 py-2">Role</th>
+            <th class="px-4 py-2">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr class="border-t">
+                <td class="px-4 py-2">@($"{user.FirstName} {user.LastName}")</td>
+                <td class="px-4 py-2">@user.Email</td>
+                <td class="px-4 py-2">@user.Mobile</td>
+                <td class="px-4 py-2">@user.Role</td>
+                <td class="px-4 py-2">
+                    <a href="@Url.Action("EditUser", new { id = user.Id })"
+                       class="text-blue-600 hover:underline">Edit</a> |
+                    <a href="@Url.Action("DeleteUser", new { id = user.Id })"
+                       class="text-red-600 hover:underline">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

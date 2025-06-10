@@ -1,0 +1,63 @@
+﻿@model IEnumerable<CompanyDirectory.Models.Company>
+
+@{
+    ViewData["Title"] = "Manage Companies";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="flex justify-between items-center mb-6">
+    <h1 class="text-3xl font-bold text-gray-800">Manage Companies</h1>
+    <a asp-action="CreateCompany" asp-controller="Admin" 
+       class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition duration-300">
+        + Add New Company
+    </a>
+</div>
+
+@if (!Model.Any())
+{
+    <p class="text-gray-600">No companies found.</p>
+}
+else
+{
+    <div class="overflow-x-auto">
+        <table class="min-w-full bg-white border border-gray-200 rounded shadow-sm">
+            <thead class="bg-red-600 text-white">
+                <tr>
+                    <th class="px-4 py-2 text-left">Name</th>
+                    <th class="px-4 py-2 text-left">Description</th>
+                    <th class="px-4 py-2 text-left">Logo</th>
+                    <th class="px-4 py-2 text-left">Website</th>
+                    <th class="px-4 py-2 text-left">Created</th>
+                    <th class="px-4 py-2 text-left">Updated</th>
+                    <th class="px-4 py-2 text-left">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="border-t border-gray-200 hover:bg-gray-100">
+                        <td class="px-4 py-2">@item.Name</td>
+                        <td class="px-4 py-2 truncate max-w-xs">@item.Description</td>
+                        <td class="px-4 py-2">
+                            <img src="@item.LogoUrl" alt="Logo" class="h-10 w-10 object-cover rounded-full" />
+                        </td>
+                        <td class="px-4 py-2">
+                            <a href="@item.Website" target="_blank" rel="noopener noreferrer" 
+                               class="text-blue-600 hover:underline">@item.Website</a>
+                        </td>
+                        <td class="px-4 py-2">@item.CreatedAt.ToShortDateString()</td>
+                        <td class="px-4 py-2">@item.UpdatedAt.ToShortDateString()</td>
+                        <td class="px-4 py-2 space-x-2">
+                            <a asp-action="EditCompany" asp-controller="Admin" asp-route-id="@item.Id" 
+                               class="text-blue-600 hover:underline">Edit</a>
+                            <a asp-action="DetailsCompany" asp-controller="Admin" asp-route-id="@item.Id" 
+                               class="text-green-600 hover:underline">Details</a>
+                            <a asp-action="DeleteCompany" asp-controller="Admin" asp-route-id="@item.Id" 
+                               class="text-red-600 hover:underline">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

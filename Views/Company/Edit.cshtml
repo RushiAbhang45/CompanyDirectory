@@ -2,55 +2,55 @@
 
 @{
     ViewData["Title"] = "Edit Company";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1 class="text-3xl font-bold text-gray-800 mb-4">Edit Company</h1>
-<hr class="mb-6 border-gray-300" />
+<h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Edit Company</h1>
 
-<div class="max-w-2xl mx-auto bg-white p-6 rounded-xl shadow-md">
+<div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-md">
     <form asp-action="Edit" class="space-y-6">
         <div asp-validation-summary="ModelOnly" class="text-red-500 text-sm mb-4"></div>
         <input type="hidden" asp-for="Id" />
 
         <div>
-            <label asp-for="Name" class="block text-sm font-medium text-gray-700 mb-1"></label>
-            <input asp-for="Name" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <label asp-for="Name" class="block text-sm font-medium text-gray-700 mb-1">Company Name</label>
+            <input asp-for="Name" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="e.g. Raj Aircon Pvt Ltd" />
             <span asp-validation-for="Name" class="text-red-500 text-sm"></span>
         </div>
 
         <div>
-            <label asp-for="Description" class="block text-sm font-medium text-gray-700 mb-1"></label>
-            <input asp-for="Description" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <label asp-for="Description" class="block text-sm font-medium text-gray-700 mb-1">Description</label>
+            <textarea asp-for="Description" class="w-full border border-gray-300 rounded-lg p-2 h-24 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Short company summary..."></textarea>
             <span asp-validation-for="Description" class="text-red-500 text-sm"></span>
         </div>
 
         <div>
-            <label asp-for="LogoUrl" class="block text-sm font-medium text-gray-700 mb-1"></label>
-            <input asp-for="LogoUrl" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <label asp-for="LogoUrl" class="block text-sm font-medium text-gray-700 mb-1">Logo URL</label>
+            <input asp-for="LogoUrl" type="url" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="https://..." />
             <span asp-validation-for="LogoUrl" class="text-red-500 text-sm"></span>
         </div>
 
         <div>
-            <label asp-for="Website" class="block text-sm font-medium text-gray-700 mb-1"></label>
-            <input asp-for="Website" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <label asp-for="Website" class="block text-sm font-medium text-gray-700 mb-1">Website</label>
+            <input asp-for="Website" type="url" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="https://www.company.com" />
             <span asp-validation-for="Website" class="text-red-500 text-sm"></span>
         </div>
 
         <div>
-            <label asp-for="CreatedAt" class="block text-sm font-medium text-gray-700 mb-1"></label>
-            <input asp-for="CreatedAt" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <label asp-for="CreatedAt" class="block text-sm font-medium text-gray-700 mb-1">Created At</label>
+            <input asp-for="CreatedAt" type="datetime-local" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
             <span asp-validation-for="CreatedAt" class="text-red-500 text-sm"></span>
         </div>
 
         <div>
-            <label asp-for="UpdatedAt" class="block text-sm font-medium text-gray-700 mb-1"></label>
-            <input asp-for="UpdatedAt" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <label asp-for="UpdatedAt" class="block text-sm font-medium text-gray-700 mb-1">Updated At</label>
+            <input asp-for="UpdatedAt" type="datetime-local" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
             <span asp-validation-for="UpdatedAt" class="text-red-500 text-sm"></span>
         </div>
 
-        <div class="flex items-center gap-4">
-            <input type="submit" value="Save" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded-lg transition" />
-            <a asp-action="Index" class="text-blue-600 hover:underline">Back to List</a>
+        <div class="flex justify-between items-center">
+            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg transition">Save</button>
+            <a asp-action="Index" class="text-blue-600 hover:underline">← Back to List</a>
         </div>
     </form>
 </div>

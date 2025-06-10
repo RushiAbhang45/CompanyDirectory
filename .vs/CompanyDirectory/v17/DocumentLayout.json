@@ -3,32 +3,140 @@
   "WorkspaceRootPath": "D:\\RA_DATA\\CompanyDirectory\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\authentication\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\authentication\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\company\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\company\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\authentication\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\authentication\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\migrations\\20250610050622_updateusertablewithtimestamps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:migrations\\20250610050622_updateusertablewithtimestamps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\admin\\deleteuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\admin\\deleteuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\admin\\viewusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\admin\\viewusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\admin\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\admin\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\admin\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\admin\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\migrations\\20250609115520_createusertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:migrations\\20250609115520_createusertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\authentication\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\authentication\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\admin\\editcompany.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\admin\\editcompany.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\data\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:data\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\migrations\\20250604073227_addcompanyfieldsorfixes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:migrations\\20250604073227_addcompanyfieldsorfixes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\admin\\deletecompany.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\admin\\deletecompany.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\admin\\createcompany.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\admin\\createcompany.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\admin\\managecompanies.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\admin\\managecompanies.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\company\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\company\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\authentication\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\authentication\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\company\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\company\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\company\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\company\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\company\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\company\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\authentication\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -47,59 +155,23 @@
       "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\migrations\\20250606102007_adduserstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:migrations\\20250606102007_adduserstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\viewmodels\\resetpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:viewmodels\\resetpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\company\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\company\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\migrations\\20250604073227_addcompanyfieldsorfixes.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:migrations\\20250604073227_addcompanyfieldsorfixes.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\migrations\\20250604072509_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:migrations\\20250604072509_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\data\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:data\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -116,18 +188,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\company\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\company\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\company\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\company\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\views\\company\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|solutionrelative:views\\company\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83DC93FF-E06D-4D6B-9CD7-B5EA7D720A11}|CompanyDirectory.csproj|d:\\ra_data\\companydirectory\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -161,303 +221,229 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "AuthenticationController.cs",
               "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Controllers\\AuthenticationController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthenticationController.cs",
               "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Controllers\\AuthenticationController.cs",
               "RelativeToolTip": "Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAIwIcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAwwA0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T09:51:23.001Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAowHAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-03T12:11:11.059Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Authentication\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\Authentication\\Login.cshtml",
-              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Authentication\\Login.cshtml",
-              "RelativeToolTip": "Views\\Authentication\\Login.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-06T10:28:04.579Z",
+              "Title": "20250610050622_UpdateUserTableWithTimestamps.cs",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Migrations\\20250610050622_UpdateUserTableWithTimestamps.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250610050622_UpdateUserTableWithTimestamps.cs",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Migrations\\20250610050622_UpdateUserTableWithTimestamps.cs",
+              "RelativeToolTip": "Migrations\\20250610050622_UpdateUserTableWithTimestamps.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAwwDsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T05:06:27.7Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Company\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Company\\Index.cshtml",
-              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Company\\Index.cshtml",
-              "RelativeToolTip": "Views\\Company\\Index.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAA4AAABPAAAAAAAAAA==",
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T09:38:14.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateUser.cshtml",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Admin\\CreateUser.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\CreateUser.cshtml",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Admin\\CreateUser.cshtml",
+              "RelativeToolTip": "Views\\Admin\\CreateUser.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADAAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-03T11:00:25.088Z",
+              "WhenOpened": "2025-06-10T04:41:06.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DeleteUser.cshtml",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Admin\\DeleteUser.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\DeleteUser.cshtml",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Admin\\DeleteUser.cshtml",
+              "RelativeToolTip": "Views\\Admin\\DeleteUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T04:44:52.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowCUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T10:36:47.775Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "RegisterViewModel.cs",
-              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\ViewModels\\RegisterViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\RegisterViewModel.cs",
-              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\ViewModels\\RegisterViewModel.cs",
-              "RelativeToolTip": "ViewModels\\RegisterViewModel.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAwCcAAAAAAAAAAAAAAA==",
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAIwMAAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T09:47:09.144Z",
+              "WhenOpened": "2025-06-09T05:54:18.319Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Dashboard.cshtml",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAiwBkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T06:40:51.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CompanyController.cs",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Controllers\\CompanyController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CompanyController.cs",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Controllers\\CompanyController.cs",
+              "RelativeToolTip": "Controllers\\CompanyController.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAuwJUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T10:54:10.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ViewUsers.cshtml",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Admin\\ViewUsers.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ViewUsers.cshtml",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Admin\\ViewUsers.cshtml",
+              "RelativeToolTip": "Views\\Admin\\ViewUsers.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T04:39:02.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EditUser.cshtml",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Admin\\EditUser.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\EditUser.cshtml",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Admin\\EditUser.cshtml",
+              "RelativeToolTip": "Views\\Admin\\EditUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T04:43:44.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20250609115520_CreateUserTable.cs",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Migrations\\20250609115520_CreateUserTable.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250609115520_CreateUserTable.cs",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Migrations\\20250609115520_CreateUserTable.cs",
+              "RelativeToolTip": "Migrations\\20250609115520_CreateUserTable.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T11:55:29.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EditCompany.cshtml",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Admin\\EditCompany.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\EditCompany.cshtml",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Admin\\EditCompany.cshtml",
+              "RelativeToolTip": "Views\\Admin\\EditCompany.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T07:46:28.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Register.cshtml",
               "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Authentication\\Register.cshtml",
               "RelativeDocumentMoniker": "Views\\Authentication\\Register.cshtml",
               "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Authentication\\Register.cshtml",
               "RelativeToolTip": "Views\\Authentication\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAAEsAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-06T10:26:33.335Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T10:36:47.775Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "package.json",
-              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\package.json",
-              "RelativeDocumentMoniker": "package.json",
-              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\package.json",
-              "RelativeToolTip": "package.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-04T05:03:39.109Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ForgotPassword.cshtml",
-              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Authentication\\ForgotPassword.cshtml",
-              "RelativeDocumentMoniker": "Views\\Authentication\\ForgotPassword.cshtml",
-              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Authentication\\ForgotPassword.cshtml",
-              "RelativeToolTip": "Views\\Authentication\\ForgotPassword.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-06T10:29:01.706Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ShowResetLink.cshtml",
-              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Authentication\\ShowResetLink.cshtml",
-              "RelativeDocumentMoniker": "Views\\Authentication\\ShowResetLink.cshtml",
-              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Authentication\\ShowResetLink.cshtml",
-              "RelativeToolTip": "Views\\Authentication\\ShowResetLink.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-06T10:30:12.859Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ResetPassword.cshtml",
-              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Authentication\\ResetPassword.cshtml",
-              "RelativeDocumentMoniker": "Views\\Authentication\\ResetPassword.cshtml",
-              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Authentication\\ResetPassword.cshtml",
-              "RelativeToolTip": "Views\\Authentication\\ResetPassword.cshtml",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAIwCMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-06T10:31:38.302Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "20250606102007_AddUsersTable.cs",
-              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Migrations\\20250606102007_AddUsersTable.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250606102007_AddUsersTable.cs",
-              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Migrations\\20250606102007_AddUsersTable.cs",
-              "RelativeToolTip": "Migrations\\20250606102007_AddUsersTable.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBsAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T10:20:13.95Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ResetPasswordViewModel.cs",
-              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\ViewModels\\ResetPasswordViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\ResetPasswordViewModel.cs",
-              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\ViewModels\\ResetPasswordViewModel.cs",
-              "RelativeToolTip": "ViewModels\\ResetPasswordViewModel.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAxwBMAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T09:57:31.419Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T10:12:25.94Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Models\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
-              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Models\\ApplicationUser.cs",
-              "RelativeToolTip": "Models\\ApplicationUser.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAIwBUAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T09:38:14.503Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\ViewModels\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
-              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\ViewModels\\LoginViewModel.cs",
-              "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T09:49:00.237Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Company\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Company\\Details.cshtml",
-              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Company\\Details.cshtml",
-              "RelativeToolTip": "Views\\Company\\Details.cshtml",
-              "ViewState": "AgIAADIAAAAAAAAAAAD4vw0AAACGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-03T11:00:38.816Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "20250604073227_AddCompanyFieldsOrFixes.Designer.cs",
-              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Migrations\\20250604073227_AddCompanyFieldsOrFixes.Designer.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250604073227_AddCompanyFieldsOrFixes.Designer.cs",
-              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Migrations\\20250604073227_AddCompanyFieldsOrFixes.Designer.cs",
-              "RelativeToolTip": "Migrations\\20250604073227_AddCompanyFieldsOrFixes.Designer.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T12:16:40.508Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "DbSeeder.cs",
-              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Data\\DbSeeder.cs",
-              "RelativeDocumentMoniker": "Data\\DbSeeder.cs",
-              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Data\\DbSeeder.cs",
-              "RelativeToolTip": "Data\\DbSeeder.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwD4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T10:40:36.578Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Microsoft.Common.CurrentVersion.targets",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ViewState": "AgIAANoUAAAAAAAAAAAuwBIVAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-06-06T04:38:37.873Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "CompanyController.cs",
-              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Controllers\\CompanyController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CompanyController.cs",
-              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Controllers\\CompanyController.cs",
-              "RelativeToolTip": "Controllers\\CompanyController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T10:54:10.886Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
               "Title": "Company.cs",
               "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Models\\Company.cs",
               "RelativeDocumentMoniker": "Models\\Company.cs",
               "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Models\\Company.cs",
               "RelativeToolTip": "Models\\Company.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T11:34:52.054Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 15,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\ViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\RegisterViewModel.cs",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\ViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "ViewModels\\RegisterViewModel.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAuwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T09:47:09.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "AppDbContextModelSnapshot.cs",
               "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Migrations\\AppDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Migrations\\AppDbContextModelSnapshot.cs",
               "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Migrations\\AppDbContextModelSnapshot.cs",
               "RelativeToolTip": "Migrations\\AppDbContextModelSnapshot.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAgwAIAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAgwI0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T12:16:55.423Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "20250604072509_InitialCreate.Designer.cs",
-              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Migrations\\20250604072509_InitialCreate.Designer.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250604072509_InitialCreate.Designer.cs",
-              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Migrations\\20250604072509_InitialCreate.Designer.cs",
-              "RelativeToolTip": "Migrations\\20250604072509_InitialCreate.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T12:16:09.033Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 17,
               "Title": "AppDbContextFactory.cs",
               "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Data\\AppDbContextFactory.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContextFactory.cs",
@@ -469,7 +455,305 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T10:12:25.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T10:50:15.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DbSeeder.cs",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Data\\DbSeeder.cs",
+              "RelativeDocumentMoniker": "Data\\DbSeeder.cs",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Data\\DbSeeder.cs",
+              "RelativeToolTip": "Data\\DbSeeder.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAiwDYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T10:40:36.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T10:21:46.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T09:49:00.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20250604073227_AddCompanyFieldsOrFixes.cs",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Migrations\\20250604073227_AddCompanyFieldsOrFixes.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250604073227_AddCompanyFieldsOrFixes.cs",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Migrations\\20250604073227_AddCompanyFieldsOrFixes.cs",
+              "RelativeToolTip": "Migrations\\20250604073227_AddCompanyFieldsOrFixes.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T09:14:36.494Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 25,
+              "Title": "CreateCompany.cshtml",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Admin\\CreateCompany.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\CreateCompany.cshtml",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Admin\\CreateCompany.cshtml",
+              "RelativeToolTip": "Views\\Admin\\CreateCompany.cshtml",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAowDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T07:44:22.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DeleteCompany.cshtml",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Admin\\DeleteCompany.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\DeleteCompany.cshtml",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Admin\\DeleteCompany.cshtml",
+              "RelativeToolTip": "Views\\Admin\\DeleteCompany.cshtml",
+              "ViewState": "AgIAABQAAAAAAAAAAAAowC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T07:47:34.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAgwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T05:57:12.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ManageCompanies.cshtml",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Admin\\ManageCompanies.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ManageCompanies.cshtml",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Admin\\ManageCompanies.cshtml",
+              "RelativeToolTip": "Views\\Admin\\ManageCompanies.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T06:47:40.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Company\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Company\\Index.cshtml",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Company\\Index.cshtml",
+              "RelativeToolTip": "Views\\Company\\Index.cshtml",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAwGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T11:00:25.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Company\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Company\\Create.cshtml",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Company\\Create.cshtml",
+              "RelativeToolTip": "Views\\Company\\Create.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T09:52:17.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Authentication\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Authentication\\Login.cshtml",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Authentication\\Login.cshtml",
+              "RelativeToolTip": "Views\\Authentication\\Login.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-06T10:28:04.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Company\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Company\\Edit.cshtml",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Company\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Company\\Edit.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T09:50:30.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Company\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Company\\Delete.cshtml",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Company\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Company\\Delete.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T09:51:36.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAowHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T12:11:11.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "package.json",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\package.json",
+              "RelativeDocumentMoniker": "package.json",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\package.json",
+              "RelativeToolTip": "package.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-04T05:03:39.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Authentication\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "Views\\Authentication\\ForgotPassword.cshtml",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Authentication\\ForgotPassword.cshtml",
+              "RelativeToolTip": "Views\\Authentication\\ForgotPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-06T10:29:01.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ShowResetLink.cshtml",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Authentication\\ShowResetLink.cshtml",
+              "RelativeDocumentMoniker": "Views\\Authentication\\ShowResetLink.cshtml",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Authentication\\ShowResetLink.cshtml",
+              "RelativeToolTip": "Views\\Authentication\\ShowResetLink.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-06T10:30:12.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ResetPassword.cshtml",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Authentication\\ResetPassword.cshtml",
+              "RelativeDocumentMoniker": "Views\\Authentication\\ResetPassword.cshtml",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Authentication\\ResetPassword.cshtml",
+              "RelativeToolTip": "Views\\Authentication\\ResetPassword.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-06T10:31:38.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ResetPasswordViewModel.cs",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\ViewModels\\ResetPasswordViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ResetPasswordViewModel.cs",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\ViewModels\\ResetPasswordViewModel.cs",
+              "RelativeToolTip": "ViewModels\\ResetPasswordViewModel.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAxwBMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T09:57:31.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Company\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Company\\Details.cshtml",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Company\\Details.cshtml",
+              "RelativeToolTip": "Views\\Company\\Details.cshtml",
+              "ViewState": "AgIAADIAAAAAAAAAAAD4vw0AAACGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T11:00:38.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "20250604073227_AddCompanyFieldsOrFixes.Designer.cs",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Migrations\\20250604073227_AddCompanyFieldsOrFixes.Designer.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250604073227_AddCompanyFieldsOrFixes.Designer.cs",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Migrations\\20250604073227_AddCompanyFieldsOrFixes.Designer.cs",
+              "RelativeToolTip": "Migrations\\20250604073227_AddCompanyFieldsOrFixes.Designer.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T12:16:40.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAANoUAAAAAAAAAAAuwBIVAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-06-06T04:38:37.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "20250604072509_InitialCreate.Designer.cs",
+              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Migrations\\20250604072509_InitialCreate.Designer.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250604072509_InitialCreate.Designer.cs",
+              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Migrations\\20250604072509_InitialCreate.Designer.cs",
+              "RelativeToolTip": "Migrations\\20250604072509_InitialCreate.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T12:16:09.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Models\\Product.cs",
@@ -481,43 +765,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 44,
               "Title": "package-lock.json",
               "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\package-lock.json",
               "RelativeDocumentMoniker": "package-lock.json",
               "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\package-lock.json",
               "RelativeToolTip": "package-lock.json",
-              "ViewState": "AgIAAFYBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFIBAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-06-04T04:59:14.352Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 45,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
               "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\_ViewImports.cshtml",
               "RelativeToolTip": "Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-05T11:01:52.035Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Company\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Company\\Delete.cshtml",
-              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Company\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Company\\Delete.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAuwCwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-04T09:51:36.827Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 46,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
@@ -529,31 +801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Company\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Company\\Create.cshtml",
-              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Company\\Create.cshtml",
-              "RelativeToolTip": "Views\\Company\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-04T09:52:17.032Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\Views\\Company\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Company\\Edit.cshtml",
-              "ToolTip": "D:\\RA_DATA\\CompanyDirectory\\Views\\Company\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Company\\Edit.cshtml",
-              "ViewState": "AgIAACUAAAAAAAAAAAAuwDwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-04T09:50:30.375Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 47,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -565,7 +813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 48,
               "Title": "tailwind.config.js",
               "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\tailwind.config.js",
               "RelativeDocumentMoniker": "tailwind.config.js",
@@ -577,7 +825,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 50,
               "Title": "site.css",
               "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -589,7 +837,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 49,
               "Title": "input.css",
               "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\wwwroot\\css\\input.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\input.css",
@@ -601,7 +849,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 51,
               "Title": "input.css",
               "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\wwwroot\\css\\input.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\input.css",
@@ -613,7 +861,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 52,
               "Title": "postcss.config.js",
               "DocumentMoniker": "D:\\RA_DATA\\CompanyDirectory\\postcss.config.js",
               "RelativeDocumentMoniker": "postcss.config.js",

@@ -5,13 +5,14 @@ using CompanyDirectory.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // Register services
-builder.Services.AddControllersWithViews().AddSessionStateTempDataProvider(); // Optional if using TempData
-builder.Services.AddHttpContextAccessor(); // Needed for accessing session in views
+builder.Services.AddControllersWithViews().AddSessionStateTempDataProvider();
+builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddDistributedMemoryCache(); // Required for session storage
+// Enable Session
+builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromMinutes(30);
@@ -19,21 +20,35 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
+// Authentication service (required for UseAuthentication)
+builder.Services.AddAuthentication("CookieAuth") // Use a simple cookie scheme
+    .AddCookie("CookieAuth", options =>
+    {
+        options.LoginPath = "/Authentication/Login";
+        options.AccessDeniedPath = "/Authentication/Login";
+    });
+
+// Build the app
 var app = builder.Build();
 
-// Run seeder
+// Apply migrations and seed data
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
     db.Database.Migrate();
-    DbSeeder.SeedCompanies(db);
+    DbSeeder.SeedCompanies(db); // Seeds Admin and Companies
 }
 
-// Middleware
+// Middleware pipeline
 app.UseStaticFiles();
+
 app.UseRouting();
 
-app.UseSession(); // Must come before UseAuthorization
+// Enable session before auth middleware
+app.UseSession();
+
+// Authentication & Authorization middleware order matters
+app.UseAuthentication();
 app.UseAuthorization();
 
 // Default route

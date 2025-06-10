@@ -4,7 +4,7 @@ namespace CompanyDirectory.Models
 {
     public class ApplicationUser
     {
-        public int Id { get; set; }
+        public long Id { get; set; }
 
         [Required]
         public string? FirstName { get; set; }
@@ -20,5 +20,11 @@ namespace CompanyDirectory.Models
 
         [Required]
         public string? PasswordHash { get; set; }
+
+        [Required]
+        public string? Role { get; set; } = "User";
+
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
     }
 }

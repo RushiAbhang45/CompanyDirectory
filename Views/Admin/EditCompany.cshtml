@@ -1,0 +1,55 @@
+﻿@model CompanyDirectory.Models.Company
+
+@{
+    ViewData["Title"] = "Edit Company";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1 class="text-3xl font-bold mb-6">Edit Company</h1>
+
+<form asp-action="EditCompany" class="max-w-lg bg-white p-6 rounded shadow">
+    <input type="hidden" asp-for="Id" />
+    <div asp-validation-summary="ModelOnly" class="text-red-600 mb-4"></div>
+
+    <div class="mb-4">
+        <label asp-for="Name" class="block font-semibold mb-1"></label>
+        <input asp-for="Name" class="w-full border border-gray-300 rounded px-3 py-2" />
+        <span asp-validation-for="Name" class="text-red-600 text-sm"></span>
+    </div>
+
+    <div class="mb-4">
+        <label asp-for="Description" class="block font-semibold mb-1"></label>
+        <input asp-for="Description" class="w-full border border-gray-300 rounded px-3 py-2" />
+        <span asp-validation-for="Description" class="text-red-600 text-sm"></span>
+    </div>
+
+    <div class="mb-4">
+        <label asp-for="LogoUrl" class="block font-semibold mb-1"></label>
+        <input asp-for="LogoUrl" class="w-full border border-gray-300 rounded px-3 py-2" />
+        <span asp-validation-for="LogoUrl" class="text-red-600 text-sm"></span>
+    </div>
+
+    <div class="mb-4">
+        <label asp-for="Website" class="block font-semibold mb-1"></label>
+        <input asp-for="Website" class="w-full border border-gray-300 rounded px-3 py-2" />
+        <span asp-validation-for="Website" class="text-red-600 text-sm"></span>
+    </div>
+
+    <div class="mb-4">
+        <label asp-for="CreatedAt" class="block font-semibold mb-1"></label>
+        <input asp-for="CreatedAt" type="date" class="w-full border border-gray-300 rounded px-3 py-2" />
+        <span asp-validation-for="CreatedAt" class="text-red-600 text-sm"></span>
+    </div>
+
+    <div class="mb-6">
+        <label asp-for="UpdatedAt" class="block font-semibold mb-1"></label>
+        <input asp-for="UpdatedAt" type="date" class="w-full border border-gray-300 rounded px-3 py-2" />
+        <span asp-validation-for="UpdatedAt" class="text-red-600 text-sm"></span>
+    </div>
+
+    <button type="submit" class="bg-red-600 text-white px-5 py-2 rounded hover:bg-red-700 transition duration-300">
+        Save
+    </button>
+
+    <a asp-action="ManageCompanies" class="ml-4 text-gray-600 hover:underline">Cancel</a>
+</form>
