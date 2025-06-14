@@ -3,44 +3,52 @@
     ViewData["Title"] = "Manage Companies";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-
-<div class="flex justify-between items-center mb-6">
-    <h1 class="text-3xl font-bold text-gray-800">Manage Companies</h1>
-    <a asp-action="CreateCompany" asp-controller="Admin" 
-       class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition duration-300">
-        + Add New Company
-    </a>
-</div>
-
-<!-- Search Input -->
-<div class="mb-6">
-    <div class="flex space-x-2">
-        <input id="companySearchBox" type="text" placeholder="Search Companies..."
-               class="px-4 py-2 border rounded w-full focus:outline-none focus:ring-2 focus:ring-red-500" />
-        @* <button id="manualSearchBtn"
-                class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
-            Search
-        </button> *@
+@{
+    var breadcrumbs = new List<(string, string?)>
+    {
+        ("Dashboard", Url.Action("Dashboard", "Admin")),
+        ("Company", Url.Action("ManageCompanies", "Admin")),
+       
+    };
+}
+@Html.Partial("_Breadcrumbs", breadcrumbs)
+<!-- Full-width content wrapper with proper padding -->
+<div class="w-full px-6">
+    
+    <!-- Header Section -->
+    <div class="flex justify-between items-center mb-6">
+        <h1 class="text-3xl font-bold text-gray-800">Manage Companies</h1>
+        <a asp-action="CreateCompany" asp-controller="Admin" 
+           class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition duration-300">
+            + Add New Company
+        </a>
     </div>
-</div>
 
-<!-- Alert -->
-<div id="alertNotFound" class="hidden mb-4 bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-2 rounded">
-    No companies found.
-</div>
+    <!-- Search Input -->
+    <div class="mb-6">
+        <div class="flex space-x-2">
+            <input id="companySearchBox" type="text" placeholder="Search Companies..."
+                   class="px-4 py-2 border rounded w-full focus:outline-none focus:ring-2 focus:ring-red-500" />
+        </div>
+    </div>
 
-<!-- Partial View Container -->
-<div id="companyTableContainer">
-    @await Html.PartialAsync("CompanyTable", Model)
+    <!-- Alert -->
+    <div id="alertNotFound" class="hidden mb-4 bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-2 rounded">
+        No companies found.
+    </div>
+
+    <!-- Company Table Container -->
+    <div id="companyTableContainer">
+        @await Html.PartialAsync("CompanyTable", Model)
+    </div>
+
 </div>
 
 @section Scripts {
     <script>
         const searchBox = document.getElementById("companySearchBox");
-        const manualSearchBtn = document.getElementById("manualSearchBtn");
         const alertBox = document.getElementById("alertNotFound");
         const tableContainer = document.getElementById("companyTableContainer");
-
         let timeout = null;
 
         function performSearch(query) {
@@ -48,8 +56,7 @@
                 .then(response => response.text())
                 .then(html => {
                     tableContainer.innerHTML = html;
-
-                    const hasResults = html.trim().includes("<table"); // crude check if table exists
+                    const hasResults = html.trim().includes("<table");
                     alertBox.classList.toggle("hidden", hasResults);
                 })
                 .catch(() => {
@@ -57,19 +64,12 @@
                 });
         }
 
-        // Dynamic search (on typing)
         searchBox.addEventListener("input", () => {
             clearTimeout(timeout);
             const query = searchBox.value.trim();
             if (query.length >= 3 || query.length === 0) {
                 timeout = setTimeout(() => performSearch(query), 300);
             }
-        });
-
-        // Manual search button
-        manualSearchBtn.addEventListener("click", () => {
-            const query = searchBox.value.trim();
-            performSearch(query);
         });
     </script>
 }

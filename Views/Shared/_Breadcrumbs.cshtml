@@ -1,0 +1,25 @@
+﻿@model List<(string Label, string? Url)>
+
+<nav class="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+    <ol class="list-reset flex items-center space-x-2">
+        @foreach (var crumb in Model)
+        {
+            <li>
+                @if (!string.IsNullOrEmpty(crumb.Url))
+                {
+                    <a href="@crumb.Url" class="hover:text-blue-600">@crumb.Label</a>
+                }
+                else
+                {
+                    <span class="text-gray-700 font-medium">@crumb.Label</span>
+                }
+            </li>
+            @if (crumb != Model.Last())
+            {
+                <li>
+                    <span>/</span>
+                </li>
+            }
+        }
+    </ol>
+</nav>

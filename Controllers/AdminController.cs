@@ -163,6 +163,7 @@ namespace CompanyDirectory.Controllers
             var users = await _context.Users.ToListAsync();
             return View(users);
         }
+
         // Create - GET
         [HttpGet]
         public IActionResult CreateUser()
@@ -178,17 +179,21 @@ namespace CompanyDirectory.Controllers
         {
             if (!IsAdmin()) return RedirectToAction("Login", "Authentication");
 
-            if (_context.Users.Any(u => u.Email == user.Email))
+            // Check if email already exists
+            if (await _context.Users.AnyAsync(u => u.Email == user.Email))
                 ModelState.AddModelError("Email", "Email already exists");
 
-            if (!ModelState.IsValid) return View(user);
+            if (!ModelState.IsValid)
+                return View(user);
 
-            user.PasswordHash = BCrypt.Net.BCrypt.HashPassword("Default@123"); // Set default password
+            // Set default password and timestamps
+            user.PasswordHash = BCrypt.Net.BCrypt.HashPassword("Default@123");
             user.CreatedAt = DateTime.UtcNow;
             user.UpdatedAt = DateTime.UtcNow;
 
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
+
             return RedirectToAction("ViewUsers");
         }
 
@@ -212,7 +217,11 @@ namespace CompanyDirectory.Controllers
             if (!IsAdmin()) return RedirectToAction("Login", "Authentication");
             if (id != user.Id) return NotFound();
 
-            if (!ModelState.IsValid) return View(user);
+            // Exclude password from model validation
+            ModelState.Remove("PasswordHash");
+
+            if (!ModelState.IsValid)
+                return View(user);
 
             var existing = await _context.Users.FindAsync(id);
             if (existing == null) return NotFound();
@@ -224,6 +233,7 @@ namespace CompanyDirectory.Controllers
             existing.UpdatedAt = DateTime.UtcNow;
 
             await _context.SaveChangesAsync();
+
             return RedirectToAction("ViewUsers");
         }
 
@@ -231,6 +241,9 @@ namespace CompanyDirectory.Controllers
         public async Task<IActionResult> DeleteUser(long? id)
         {
             if (!IsAdmin()) return RedirectToAction("Login", "Authentication");
+
+            if (id == null) return NotFound();
+
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
             if (user == null) return NotFound();
 
@@ -240,12 +253,17 @@ namespace CompanyDirectory.Controllers
         // Delete - POST
         [HttpPost, ActionName("DeleteUser")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteUserConfirmed(long id)
+        public async Task<IActionResult> DeleteUser(long id)
         {
             if (!IsAdmin()) return RedirectToAction("Login", "Authentication");
+
             var user = await _context.Users.FindAsync(id);
-            _context.Users.Remove(user);
-            await _context.SaveChangesAsync();
+            if (user != null)
+            {
+                _context.Users.Remove(user);
+                await _context.SaveChangesAsync();
+            }
+
             return RedirectToAction("ViewUsers");
         }
     }

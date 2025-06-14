@@ -285,4 +285,8 @@ D:\RA_DATA\CompanyDirectory\obj\Debug\net8.0\refint\CompanyDirectory.dll
 D:\RA_DATA\CompanyDirectory\obj\Debug\net8.0\CompanyDirectory.pdb
 D:\RA_DATA\CompanyDirectory\obj\Debug\net8.0\CompanyDirectory.genruntimeconfig.cache
 D:\RA_DATA\CompanyDirectory\obj\Debug\net8.0\ref\CompanyDirectory.dll
+D:\RA_DATA\CompanyDirectory\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
+D:\RA_DATA\CompanyDirectory\bin\Debug\net8.0\SixLabors.ImageSharp.dll
+D:\RA_DATA\CompanyDirectory\bin\Debug\net8.0\SixLabors.ImageSharp.Web.dll
+D:\RA_DATA\CompanyDirectory\obj\Debug\net8.0\CompanyDirectory.MvcApplicationPartsAssemblyInfo.cs
 D:\RA_DATA\CompanyDirectory\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

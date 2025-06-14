@@ -2,6 +2,13 @@
     ViewData["Title"] = "Dashboard";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
+@{
+    var breadcrumbs = new List<(string, string?)>
+    {
+        ("Dashboard", null)
+    };
+}
+@Html.Partial("_Breadcrumbs", breadcrumbs)
 
 <h1 class="text-3xl font-bold mb-6">Welcome to Admin Dashboard</h1>
 

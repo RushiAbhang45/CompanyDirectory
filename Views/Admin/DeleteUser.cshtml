@@ -1,27 +1,48 @@
 ﻿@model CompanyDirectory.Models.ApplicationUser
+
 @{
     ViewData["Title"] = "Delete User";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
+@{
+    var breadcrumbs = new List<(string, string?)>
+    {
+        ("Dashboard", Url.Action("Dashboard", "Admin")),
+        ("Manage Users", Url.Action("ViewUsers", "Admin")),
+        ("Delete User", null)
+    };
+}
+@Html.Partial("_Breadcrumbs", breadcrumbs)
 
-<h2 class="text-2xl font-bold mb-6 text-red-600">Confirm Delete</h2>
+<div class="min-h-screen flex items-center justify-center bg-gray-100 py-10 px-4">
+    <div class="w-full max-w-2xl bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+        <h2 class="text-3xl font-bold text-center text-red-600 mb-6">Confirm User Deletion</h2>
 
-<div class="bg-white p-6 rounded shadow max-w-xl">
-    <p class="mb-4 text-gray-700">Are you sure you want to delete the following user?</p>
+        <p class="text-gray-700 text-center mb-6">
+            Are you sure you want to permanently delete the following user?
+        </p>
 
-    <ul class="mb-4">
-        <li><strong>Name:</strong> @($"{Model.FirstName} {Model.LastName}")</li>
-        <li><strong>Email:</strong> @Model.Email</li>
-        <li><strong>Mobile:</strong> @Model.Mobile</li>
-        <li><strong>Role:</strong> @Model.Role</li>
-    </ul>
+        <div class="bg-gray-50 p-4 rounded-lg border mb-6">
+            <ul class="space-y-2 text-gray-800">
+                <li><strong>Name:</strong> @($"{Model.FirstName} {Model.LastName}")</li>
+                <li><strong>Email:</strong> @Model.Email</li>
+                <li><strong>Mobile:</strong> @Model.Mobile</li>
+                <li><strong>Role:</strong> @Model.Role</li>
+            </ul>
+        </div>
 
-    <form asp-action="DeleteUserConfirmed" method="post">
-        <input type="hidden" asp-for="Id" />
-        <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
-            Yes, Delete
-        </button>
-        <a href="@Url.Action("ManageUsers", "Admin")"
-           class="ml-4 text-gray-700 hover:underline">Cancel</a>
-    </form>
+        <form asp-action="DeleteUser" method="post" class="flex justify-center gap-4">
+            @Html.AntiForgeryToken()
+            <input type="hidden" asp-for="Id" />
+
+            <button type="submit"
+                    class="bg-red-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-red-700 transition duration-200">
+                Yes, Delete
+            </button>
+
+            <a asp-action="ViewUsers" class="text-gray-700 px-6 py-2 rounded-lg hover:underline">
+                Cancel
+            </a>
+        </form>
+    </div>
 </div>

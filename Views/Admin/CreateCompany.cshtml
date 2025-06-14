@@ -4,7 +4,16 @@
     ViewData["Title"] = "Create Company";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-
+@{
+    var breadcrumbs = new List<(string, string?)>
+    {
+        ("Dashboard", Url.Action("Dashboard", "Admin")),
+        ("Company", Url.Action("ManageCompanies", "Admin")),
+         ("Create Company", null)
+       
+    };
+}
+@Html.Partial("_Breadcrumbs", breadcrumbs)
 <h1 class="text-3xl font-bold mb-6">Create Company</h1>
 <body class="max-w-3xl bg-white p-6 rounded shadow w-full">
 <form asp-action="CreateCompany" class="max-w-4xl bg-white p-6 rounded shadow">

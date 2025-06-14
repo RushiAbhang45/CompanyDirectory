@@ -4,6 +4,16 @@
     ViewData["Title"] = "Edit Company";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
+@{
+    var breadcrumbs = new List<(string, string?)>
+    {
+        ("Dashboard", Url.Action("Dashboard", "Admin")),
+        ("Company", Url.Action("ManageCompanies", "Admin")),
+         ("Edit Company", null)
+       
+    };
+}
+@Html.Partial("_Breadcrumbs", breadcrumbs)
 
 <h1 class="text-3xl font-bold mb-6">Edit Company</h1>
 

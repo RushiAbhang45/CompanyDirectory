@@ -8,41 +8,46 @@
 }
 else
 {
-    <table class="w-full table-auto bg-white shadow rounded">
-        <thead class="bg-gray-100">
-            <tr>
-                <th class="px-4 py-2 text-left">Name</th>
-                <th class="px-4 py-2 text-left">Description</th>
-                <th class="px-4 py-2 text-left">Logo</th>
-                <th class="px-4 py-2 text-left">Website</th>
-                <th class="px-4 py-2 text-left">Created</th>
-                <th class="px-4 py-2 text-left">Updated</th>
-                <th class="px-4 py-2 text-left">Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var company in Model)
-            {
-                <tr class="border-t hover:bg-gray-50">
-                    <td class="px-4 py-2">@company.Name</td>
-                    <td class="px-4 py-2 truncate max-w-xs">@company.Description</td>
-                    <td class="px-4 py-2">
-                        <img src="@company.LogoUrl" alt="Logo" class="h-10 w-10 object-cover rounded-full" />
-                    </td>
-                    <td class="px-4 py-2">
-                        <a href="@company.Website" class="text-blue-600 hover:underline" target="_blank">
-                            @company.Website
-                        </a>
-                    </td>
-                    <td class="px-4 py-2">@company.CreatedAt.ToString("dd.MM.yyyy")</td>
-                    <td class="px-4 py-2">@company.UpdatedAt.ToString("dd.MM.yyyy")</td>
-                    <td class="px-4 py-2 space-x-2">
-                        <a href="@Url.Action("EditCompany", "Admin", new { id = company.Id })" class="text-blue-600 hover:underline">Edit</a>
-                        <a href="@Url.Action("DetailsCompany", "Admin", new { id = company.Id })" class="text-green-600 hover:underline">Details</a>
-                        <a href="@Url.Action("DeleteCompany", "Admin", new { id = company.Id })" class="text-red-600 hover:underline">Delete</a>
-                    </td>
+    <div class="overflow-x-auto bg-white shadow rounded-lg">
+        <table class="min-w-full table-auto text-sm">
+            <thead class="bg-gray-100 text-gray-700 uppercase text-xs font-semibold">
+                <tr>
+                    <th class="px-4 py-3 text-left">Name</th>
+                    <th class="px-4 py-3 text-left">Description</th>
+                    <th class="px-4 py-3 text-left">Logo</th>
+                    <th class="px-4 py-3 text-left">Website</th>
+                    <th class="px-4 py-3 text-left">Created</th>
+                    <th class="px-4 py-3 text-left">Updated</th>
+                    <th class="px-4 py-3 text-left">Actions</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody class="text-gray-800">
+                @foreach (var company in Model)
+                {
+                    <tr class="border-t hover:bg-gray-50">
+                        <td class="px-4 py-2 font-medium">@company.Name</td>
+                        <td class="px-4 py-2 truncate max-w-xs">@company.Description</td>
+                        <td class="px-4 py-2">
+                            <img src="@company.LogoUrl" alt="Logo" class="h-10 w-10 object-cover rounded-full border" />
+                        </td>
+                        <td class="px-4 py-2">
+                            <a href="@company.Website" class="text-blue-600 hover:underline" target="_blank">
+                                @company.Website
+                            </a>
+                        </td>
+                        <td class="px-4 py-2">@company.CreatedAt.ToString("dd.MM.yyyy")</td>
+                        <td class="px-4 py-2">@company.UpdatedAt.ToString("dd.MM.yyyy")</td>
+                        <td class="px-4 py-2">
+                            <div class="flex flex-col space-y-1">
+                                <a href="@Url.Action("EditCompany", "Admin", new { id = company.Id })" class="text-blue-600 hover:underline">Edit</a>
+                                <a href="@Url.Action("DetailsCompany", "Admin", new { id = company.Id })" class="text-green-600 hover:underline">Details</a>
+                                <a href="@Url.Action("DeleteCompany", "Admin", new { id = company.Id })" class="text-red-600 hover:underline">Delete</a>
+                                <a href="@Url.Action("Index", "Product", new { companyId = company.Id })" class="text-purple-600 hover:underline">View Products</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 }
