@@ -2,23 +2,22 @@
 
 <nav class="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
     <ol class="list-reset flex items-center space-x-2">
-        @foreach (var crumb in Model)
+        @for (int i = 0; i < Model.Count; i++)
         {
+            var crumb = Model[i];
             <li>
                 @if (!string.IsNullOrEmpty(crumb.Url))
                 {
-                    <a href="@crumb.Url" class="hover:text-blue-600">@crumb.Label</a>
+                    <a href="@crumb.Url" class="hover:text-blue-600 text-blue-500">@crumb.Label</a>
                 }
                 else
                 {
                     <span class="text-gray-700 font-medium">@crumb.Label</span>
                 }
             </li>
-            @if (crumb != Model.Last())
+            @if (i < Model.Count - 1)
             {
-                <li>
-                    <span>/</span>
-                </li>
+                <li><span>/</span></li>
             }
         }
     </ol>

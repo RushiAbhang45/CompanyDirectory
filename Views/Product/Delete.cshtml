@@ -14,7 +14,9 @@
     };
 }
 
-@await Html.PartialAsync("_Breadcrumbs", breadcrumbs)
+@section Breadcrumbs {
+    @await Html.PartialAsync("_Breadcrumbs", breadcrumbs)
+}
 <div class="max-w-2xl mx-auto bg-white p-8 shadow rounded mt-6">
     <h2 class="text-2xl font-bold text-red-600 mb-4">Delete Product</h2>
 

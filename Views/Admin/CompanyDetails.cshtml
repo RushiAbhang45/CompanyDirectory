@@ -1,0 +1,56 @@
+﻿@model CompanyDirectory.Models.Company
+
+@{
+    ViewData["Title"] = "Company Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
+    var breadcrumbs = new List<(string Label, string? Url)>
+    {
+        ("Dashboard", Url.Action("Dashboard", "Admin")),
+        ("Company", Url.Action("ManageCompanies", "Admin")),
+        (Model.Name, null)
+    };
+}
+
+@section Breadcrumbs {
+    @await Html.PartialAsync("_Breadcrumbs", breadcrumbs)
+}
+<div class="container mx-auto px-4 py-6">
+    <h2 class="text-3xl font-bold text-gray-800 mb-4">@Model.Name</h2>
+    <p class="text-gray-600 mb-6">@Model.Description</p>
+
+    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Products</h3>
+
+    @if (Model.Products != null && Model.Products.Any())
+    {
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            @foreach (var product in Model.Products)
+            {
+                var imageUrl = product.ImagePaths?.Split(',', StringSplitOptions.RemoveEmptyEntries).FirstOrDefault() ?? "/images/no-image.png";
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                    <img src="@imageUrl" alt="@product.Name" class="h-48 w-full object-cover">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-1">@product.Name</h4>
+                        <p class="text-sm text-gray-600 line-clamp-3">@product.Description</p>
+                        <a href="@Url.Action("Details", "Product", new { id = product.Id })"
+                           class="text-blue-600 hover:text-blue-800 text-sm font-medium mt-2 inline-block">
+                            View Details →
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p class="text-gray-500 italic">No products available for this company.</p>
+    }
+
+    <div class="mt-8">
+        <a href="@Url.Action("ManageCompanies", "Admin")"
+           class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded shadow">
+            Back to Companies
+        </a>
+    </div>
+</div>

@@ -63,7 +63,21 @@ namespace CompanyDirectory.Controllers
             }
             return View(company);
         }
+        // ✅ New: View Company Details + Products
+        [HttpGet]
+        public async Task<IActionResult> CompanyDetails(long id)
+        {
+            if (!IsAdmin())
+                return RedirectToAction("Login", "Authentication");
 
+            var company = await _context.Companies
+                .Include(c => c.Products) // Make sure navigation property exists
+                .FirstOrDefaultAsync(c => c.Id == id);
+
+            if (company == null) return NotFound();
+
+            return View(company);
+        }
         // Edit Company - GET
         public async Task<IActionResult> EditCompany(long? id)
         {
@@ -151,6 +165,35 @@ namespace CompanyDirectory.Controllers
                 .ToListAsync();
 
             return PartialView("CompanyTable", filtered);
+        }
+        // handle Search
+        [HttpGet]
+        public async Task<IActionResult> Search(string term)
+        {
+            if (string.IsNullOrWhiteSpace(term) || term.Length < 3)
+            {
+                ViewBag.Companies = new List<Company>();
+                ViewBag.Products = new List<Product>();
+                ViewBag.Term = term;
+                return View();
+            }
+
+            term = term.ToLower();
+
+            var companies = await _context.Companies
+                .Where(c => c.Name.ToLower().Contains(term) || c.Description.ToLower().Contains(term))
+                .ToListAsync();
+
+            var products = await _context.Products
+                .Include(p => p.Company)
+                .Where(p => p.Name.ToLower().Contains(term) || p.Description.ToLower().Contains(term))
+                .ToListAsync();
+
+            ViewBag.Companies = companies;
+            ViewBag.Products = products;
+            ViewBag.Term = term;
+
+            return View();
         }
 
         // AdminController.cs ///////////////////////////////////////////User Crud ADD User Update/Delete

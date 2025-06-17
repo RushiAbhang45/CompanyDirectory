@@ -191,7 +191,6 @@ public class ProductController : Controller
         return RedirectToAction("Index", new { companyId = model.CompanyId });
     }
 
-    // GET: Product Details
     [HttpGet]
     public async Task<IActionResult> Details(long id)
     {
@@ -202,7 +201,9 @@ public class ProductController : Controller
         if (product == null)
             return NotFound();
 
-        ViewBag.Breadcrumbs = BuildBreadcrumbs(product, "Product Details");
+        ViewBag.CompanyName = product.Company?.Name;
+        ViewBag.CompanyId = product.CompanyId;
+        ViewBag.ProductName = product.Name;
 
         return View(product);
     }

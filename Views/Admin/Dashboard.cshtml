@@ -8,8 +8,9 @@
         ("Dashboard", null)
     };
 }
-@Html.Partial("_Breadcrumbs", breadcrumbs)
-
+@section Breadcrumbs {
+    @await Html.PartialAsync("_Breadcrumbs", breadcrumbs)
+}
 <h1 class="text-3xl font-bold mb-6">Welcome to Admin Dashboard</h1>
 
 <p class="mb-8 text-gray-700">

@@ -11,7 +11,9 @@
        
     };
 }
-@Html.Partial("_Breadcrumbs", breadcrumbs)
+@section Breadcrumbs {
+    @await Html.PartialAsync("_Breadcrumbs", breadcrumbs)
+}
 <!-- Full-width content wrapper with proper padding -->
 <div class="w-full px-6">
     

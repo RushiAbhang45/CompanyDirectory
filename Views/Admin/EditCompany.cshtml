@@ -13,8 +13,9 @@
        
     };
 }
-@Html.Partial("_Breadcrumbs", breadcrumbs)
-
+@section Breadcrumbs {
+    @await Html.PartialAsync("_Breadcrumbs", breadcrumbs)
+}
 <h1 class="text-3xl font-bold mb-6">Edit Company</h1>
 
 <form asp-action="EditCompany" class="max-w-lg bg-white p-6 rounded shadow">

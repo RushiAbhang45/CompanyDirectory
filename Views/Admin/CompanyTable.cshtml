@@ -40,7 +40,7 @@ else
                         <td class="px-4 py-2">
                             <div class="flex flex-col space-y-1">
                                 <a href="@Url.Action("EditCompany", "Admin", new { id = company.Id })" class="text-blue-600 hover:underline">Edit</a>
-                                <a href="@Url.Action("DetailsCompany", "Admin", new { id = company.Id })" class="text-green-600 hover:underline">Details</a>
+                                <a href="@Url.Action("CompanyDetails", "Admin", new { id = company.Id })" class="text-green-600 hover:underline">Details</a>
                                 <a href="@Url.Action("DeleteCompany", "Admin", new { id = company.Id })" class="text-red-600 hover:underline">Delete</a>
                                 <a href="@Url.Action("Index", "Product", new { companyId = company.Id })" class="text-purple-600 hover:underline">View Products</a>
                             </div>
